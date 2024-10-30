@@ -1,0 +1,7 @@
+input:invalid.bliskapaczka_admin_field_required{
+    background-color: #FFC0CB;
+}
+/*Fix for older WP versions - title breaks under menu icon */
+#toplevel_page_bliskapaczka-imported > a > .wp-menu-name{
+    padding-left:34px;
+}

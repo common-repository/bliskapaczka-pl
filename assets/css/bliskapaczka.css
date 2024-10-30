@@ -1,0 +1,119 @@
+.bliskapaczka_courier_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bliskapaczka_courier_item_wrapper {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #d6d8da;
+    margin-left: 10px;
+}
+
+.bliskapaczka_courier_item_wrapper.checked{
+    border: 2px solid #f68b5f;
+}
+
+.bliskapaczka_courier_item_wrapper input {
+    display: none;
+}
+
+.bliskapaczka_courier_item_logo {
+    width: max-content;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 12px;
+}
+
+.bliskapaczka_courier_item_price {
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+    margin-right: 8px;
+    padding-top: 8px;
+}
+.bliskapaczka_courier_item {
+    display: flex;
+}
+
+/* The Modal (background) */
+.bliskapaczka-modal {
+    position: fixed; /* Stay in place */
+    z-index: 99998; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.bliskapaczka-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    height: 600px;
+    display: none;
+    z-index: 99999;
+}
+
+/* Modal responsive breakpoints */
+@media only screen and(max-width:360px) {
+    .bliskapaczka-modal-content {
+        width: 100%;
+        padding:0;
+    }
+}
+
+@media only screen and (min-width: 361px) {
+    .bliskapaczka-modal-content {
+        width: 90%;
+        padding:5px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bliskapaczka-modal-content {
+        width: 70%;
+        padding:20px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .bliskapaczka-modal-content {
+        width: 60%;
+        padding:20px
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .bliskapaczka-modal-content {
+        width: 50%;
+        padding:20px
+    }
+}
+/* Fix for conflict with external plugin  */
+#BPWidget .bp-marker-desc .bp-brand-logo-wrapper .bp-brand-logo img {
+    max-width:60px !important;
+}
+.bliskapaczka-delivery-to-point-btn{
+    margin:5px 0 5px 0;
+    display:inline-block;
+    padding:5px;
+    border:2px solid #E55F29;
+    border-radius: 2px;
+    font-size:0.9em;
+    color: #E55F29;
+}
+a.bliskapaczka-delivery-to-point-btn{
+    text-decoration: none !important;
+    text-align: center;
+    font-weight: bold;
+}
+a.bliskapaczka-delivery-to-point-btn:visited, a.bliskapaczka-delivery-to-point-btn:hover, a.bliskapaczka-delivery-to-point-btn:active { color:#E55F29; text-decoration: none !important; }
+
+/* Pegman fix for older versions of Woocommerce */
+div#BPWidget > div > div.gm-style > div > div.gmnoprint > .gm-svpc img {
+    max-width: inherit;
+
+}
